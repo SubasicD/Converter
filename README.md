@@ -6,4 +6,4 @@ First version contains everything except History function.
 done with visual studio 2017
 First version doesn't contain an executable
 
-edit: Added History function from History1 Branch
+edit: Added History function to Master Branch from History1 Branch
