@@ -1,0 +1,31 @@
+﻿<Window x:Class="BinaryHexConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinaryHexConverter"
+        mc:Ignorable="d"
+        Title="Damir Subasic Binary Hex Converter" Height="450" Width="800">
+    <Grid x:Name="Main_Window">
+        <TextBox x:Name="Decimal_In" HorizontalAlignment="Left" Height="35" Margin="190,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Decimal_In_TextChanged"/>
+        <Label x:Name="Decimal_Input_label" Content="Integer Input" HorizontalAlignment="Left" Margin="188,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Binary_In" HorizontalAlignment="Left" Height="35" Margin="340,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Binary_In_TextChanged"/>
+        <TextBox x:Name="Hex_In" HorizontalAlignment="Left" Height="35" Margin="490,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Hex_In_TextChanged"/>
+        <Label x:Name="Binary_Input_Label" Content="Binary Input" HorizontalAlignment="Left" Margin="338,66,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Hex_Input_Label" Content="Hex Input " HorizontalAlignment="Left" Margin="488,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decimal_Out" HorizontalAlignment="Left" Height="35" Margin="190,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Binary_Out" HorizontalAlignment="Left" Height="35" Margin="340,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Hex_Out" HorizontalAlignment="Left" Height="35" Margin="490,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Decimal_Output_Label" Content="Integer Output" HorizontalAlignment="Left" Margin="188,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Binary_Output_Label" Content="Binary Output" HorizontalAlignment="Left" Margin="338,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Hex_Output_Label" Content="Hex Output" HorizontalAlignment="Left" Margin="488,238,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="History" HorizontalAlignment="Left" Height="278" Margin="38,66,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="History_SelectionChanged">
+            <ListBoxItem Content="ListBoxItem" Selected="ListBoxItem_Selected"/>
+        </ListBox>
+        <Label Content="History" HorizontalAlignment="Left" Margin="36,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Warning_Label" Content="" HorizontalAlignment="Left" Margin="271,170,0,0" VerticalAlignment="Top" Width="339" FontWeight="Bold" Foreground="#FFE20505"/>
+        <TextBox x:Name="Nibbles" HorizontalAlignment="Left" Height="51" Margin="340,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Nibbles_TextChanged"/>
+        <Label x:Name="Binary_Nibbles_Label" Content="Binary Nibbles" HorizontalAlignment="Left" Margin="338,305,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
